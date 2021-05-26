@@ -1,0 +1,228 @@
+@import url('../css/font.css');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#logo{
+    margin: 10px 45px;
+}
+#logo img{
+    height: 37px;
+    margin: 2px 11px;
+    border-radius: 8px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 23px;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 411px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: '';
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 481px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    margin: 17px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.btn:hover{
+    background-color: #30ddfc;
+    color: black;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 23px 26px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#clint-section{
+    position: relative;
+    height: 344px;
+}
+#clint-section::before{
+    content: '';
+    position: absolute;
+    background: url('../bg2.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.clint-item{
+    padding: 35px;
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clints img{
+    height: 128px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: '';
+    background: url('../contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.1rem;
+    border: 2px solid #30ddfc;
+    background: #e6e7e7;
+    color: rgb(45, 189, 65);
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box form ::placeholder{
+    color: rgb(45, 189, 65);
+}
+#contact-box form label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+.submit-btn{
+    display: flex;
+    color: white;
+    margin: 9px 20px;
+}
+.submit-btn input{
+    margin: 44px;
+    padding: 23px;
+}
+.submit-btn .btn1{
+    background: rgb(255, 54, 54);
+    color: white;
+}
+.btn1{
+    background: rgb(255, 54, 54);
+    transition: all .5s ease;
+
+}
+.btn1:hover{
+    background-color: #30ddfc;
+    color: black;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
